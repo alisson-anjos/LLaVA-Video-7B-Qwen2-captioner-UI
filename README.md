@@ -150,14 +150,6 @@ Common issues:
    - Check if virtual environment is activated
    - Verify CUDA compatibility with PyTorch version
 
-## Citation
-
-If you're using this tool in your research, please cite the original LLaVA paper and repository:
-[Add LLaVA citation]
-
-## License
-[Your chosen license]
-
 ## Acknowledgments
 - LLaVA Team for the original model and implementation
 - [Other acknowledgments]
