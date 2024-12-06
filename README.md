@@ -15,7 +15,7 @@ This tool uses LLaVA (Large Language and Vision Assistant) to generate detailed 
 - NVIDIA GPU with CUDA support
 - Sufficient GPU memory (minimum 8GB recommended)
 
-## Installation_
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -52,11 +52,6 @@ cd ..
 pip install decord transformers bitsandbytes
 pip install einops av open_clip_torch
 pip install 'accelerate>=0.26.0'
-```
-
-Note: If you encounter SSL certificate errors during installation, you can use:
-```bash
-pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org [package_name]
 ```
 
 ## Configuration
