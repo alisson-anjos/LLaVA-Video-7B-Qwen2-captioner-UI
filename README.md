@@ -151,7 +151,25 @@ Common issues:
    - Check if virtual environment is activated
    - Verify CUDA compatibility with PyTorch version
 
-## Acknowledgments
-- LLaVA Team for the original model and implementation
-- [Other acknowledgments]
-#
+# Caption refiner
+
+## Installation
+
+1. Install prerequisites
+```bash
+pip install pandas langchain-core langchain-ollama
+```
+
+2. Install ollama
+- Goto https://ollama.com
+- Click on download, choose your OS then follow the instructions
+
+3. Pull the ollama model
+```bash
+ollama pull llama2:3b
+```
+
+## Usage
+- Start the Ollama service if not running
+- Prepare your CSV file with required columns
+- Modify the script's configuration parameters (file paths, model name, etc.)

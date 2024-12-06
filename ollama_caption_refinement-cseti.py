@@ -3,8 +3,8 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_ollama.llms import OllamaLLM
 
 # Configuration parameters
-INPUT_CSV = "/home/cseti/Data/Datasets/videos/Arcane/Cut Original/best_of/jinx/16x1360x768/captions.csv"                # Path to input CSV file
-OUTPUT_CSV = "/home/cseti/Data/Datasets/videos/Arcane/Cut Original/best_of/jinx/16x1360x768/output.csv"              # Path to save the output CSV file
+INPUT_CSV = "/path/to/file.csv"                # Path to input CSV file
+OUTPUT_CSV = "/path/to/file.csv"              # Path to save the output CSV file
 INPUT_COLUMN = "caption"         # Name of the column containing text to refine
 OUTPUT_COLUMN = "refined_text"         # Name of the column where refined text will be saved
 OLLAMA_MODEL = "llama3.2:3b"               # Name of the Ollama model to use
@@ -18,8 +18,8 @@ You are an AI prompt engineer tasked with helping me modifying a list of automat
 Keep the original text but only do the following modifications:
 - you responses should just be the prompt
 - do not mention your task or the text itself
-- add the following word to the start of each prompt: csetiarcane
-- modify each text so that nfjinx is the main character in all of them, so use her name and since she's a woman, refer to her gender when necessary to make the sentences meaningful.
+- add the following word to the start of each prompt: MYTRIGGERWORD
+- modify each text so that ANNAMARIA is the main character in all of them, so use her name and since she's a woman, refer to her gender when necessary to make the sentences meaningful.
 - remove references to video such as "the video begins" or "the video features" etc., but keep those sentences meaningful
 - use only declarative sentences
 """.strip()
