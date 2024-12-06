@@ -9,6 +9,7 @@
   - [Troubleshooting](#troubleshooting)
 - [Caption refiner](#caption-refiner)
   - [Installation](#installation-1)
+  - [Configuration](#configuration-1)
   - [Usage](#usage-1)
 
 
@@ -183,7 +184,28 @@ pip install pandas langchain-core langchain-ollama
 ollama pull llama2:3b
 ```
 
+## Configuration
+
+Edit the `CONFIG` dictionary in the script to customize:
+
+Example configuration:
+```python
+CONFIG = {
+# Configuration parameters
+INPUT_CSV = "/path/to/file.csv"                # Path to input CSV file
+OUTPUT_CSV = "/path/to/file.csv"              # Path to save the output CSV file
+INPUT_COLUMN = "caption"         # Name of the column containing text to refine
+OUTPUT_COLUMN = "refined_text"         # Name of the column where refined text will be saved
+OLLAMA_MODEL = "llama3.2:3b"               # Name of the Ollama model to use
+MAX_TOKENS = 200                      # Maximum number of tokens for the refined text
+BATCH_SIZE = 10                       # Number of rows to process before saving progress
+}
+```
 ## Usage
-- Start the Ollama service if not running
-- Prepare your CSV file with required columns
-- Modify the script's configuration parameters (file paths, model name, etc.)
+1. Start the Ollama service if not running
+2. Prepare your CSV file with required columns
+3. Modify the script's configuration parameters (file paths, model name, etc.)
+4. Run the script:
+```bash
+python ollama_caption_refinement-cseti.py
+```
