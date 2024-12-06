@@ -167,6 +167,7 @@ Common issues:
    - Verify CUDA compatibility with PyTorch version
 
 # Caption refiner
+This script is designed to automatically modify and refine text prompts stored in a CSV file using Ollama. It reads through the input CSV file in batches and processes each prompt according to specific config. The script takes each prompt and transforms it by adding a trigger word at the beginning, changing the subject of the prompt to be about a specific character (that can also be configured), and removing any video-related references while maintaining the core meaning. 
 
 ## Installation
 
