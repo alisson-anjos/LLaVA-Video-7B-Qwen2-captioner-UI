@@ -19,7 +19,7 @@ This tool uses LLaVA (Large Language and Vision Assistant) to generate detailed 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/llava-video-captioner.git
+git clone https://github.com/cseti007/LLaVA-Video-7B-Qwen2-captioner.git
 cd llava-video-captioner
 ```
 
