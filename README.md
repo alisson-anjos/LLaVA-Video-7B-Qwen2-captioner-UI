@@ -15,7 +15,7 @@ This tool uses LLaVA (Large Language and Vision Assistant) to generate detailed 
 - NVIDIA GPU with CUDA support
 - Sufficient GPU memory (minimum 8GB recommended)
 
-## Installation
+## Installation_
 
 1. Clone the repository:
 ```bash
