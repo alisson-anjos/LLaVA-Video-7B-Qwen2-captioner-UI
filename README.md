@@ -66,22 +66,28 @@ Edit the `CONFIG` dictionary in the script to customize:
 Example configuration:
 ```python
 CONFIG = {
-    'max_frames_num': 24,       # Number of frames to process
-    'fps': 1.0,                 # Sampling frequency
-    'force_sample': True,       # Force uniform sampling
-    'batch_size': 8,           # Batch size for frame processing
-    'input_folder': "path/to/videos",
-    'output_csv': "path/to/output.csv",
+   # Video processing parameters
+    'max_frames_num': 24,       # Maximum number of frames to extract. If force_sample is True, exactly this many frames will be used
+    'force_sample': True,       # If True: always extract exactly max_frames_num frames evenly distributed across the video
+    'fps': 1.0,                 # Target sampling rate. Only used if force_sample is False
+                                # If False: use fps for sampling, but never exceed max_frames_num frames
+    'batch_size': 8,            # Number of frames to process at once. Higher value = more memory usage but faster processing.
+                                # Lower value = less memory usage but slower processing
     
     # Model parameters
-    'model_path': "lmms-lab/LLaVA-Video-7B-Qwen2",
-    'model_name': "llava_qwen",
-    'quantization_bits': 4,     # 4 or 8 bit quantization
+    'model_path': "lmms-lab/LLaVA-Video-7B-Qwen2",   # Model to use
+    'model_name': "llava_qwen",                      # Model name
+    'torch_dtype': "bfloat16",                       # Torch data type
+    'quantization_bits': 4,                          # Quantization bits (4 or 8)
     
     # Generation parameters
-    'max_new_tokens': 512,
-    'temperature': 0.2,
-    'do_sample': True,
+    'max_new_tokens': 220,      # Maximum number of tokens to generate
+    'temperature': 0.2,         # Generation temperature (0.0 - 1.0)
+    'do_sample': True,          # Whether to use sampling
+    
+    # File handling parameters
+    'input_folder': "path/to/videos",         # Input folder path
+    'output_csv': "path/to/output.csv",       # Output CSV file name
 }
 ```
 

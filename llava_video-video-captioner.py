@@ -37,8 +37,8 @@ CONFIG = {
     'do_sample': True,         # Whether to use sampling
     
     # File handling parameters
-    'input_folder': "/home/cseti/Data/Datasets/videos/Arcane/Cut Original/best_of/jinx/16x1360x768",         # Input folder path
-    'output_csv': "/home/cseti/Data/Datasets/videos/Arcane/Cut Original/best_of/jinx/16x1360x768/captions.csv", # Output CSV file name
+    'input_folder': "path/to/videos",         # Input folder path
+    'output_csv': "path/to/output.csv", # Output CSV file name
     
     # Prompt customization
     'prompt_template': """The video lasts for {video_time:.2f} seconds.
