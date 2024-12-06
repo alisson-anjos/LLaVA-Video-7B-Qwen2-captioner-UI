@@ -1,3 +1,17 @@
+- [LLaVA Video Captioner](#llava-video-captioner)
+  - [Features](#features)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
+  - [Supported Video Formats](#supported-video-formats)
+  - [Memory Optimization](#memory-optimization)
+  - [Troubleshooting](#troubleshooting)
+- [Caption refiner](#caption-refiner)
+  - [Installation](#installation-1)
+  - [Usage](#usage-1)
+
+
 # LLaVA Video Captioner
 
 This tool uses LLaVA (Large Language and Vision Assistant) to generate detailed descriptions of video content, with support for batch processing multiple videos.
