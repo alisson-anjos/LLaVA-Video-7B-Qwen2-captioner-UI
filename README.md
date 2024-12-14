@@ -200,6 +200,18 @@ OUTPUT_COLUMN = "refined_text"         # Name of the column where refined text w
 OLLAMA_MODEL = "llama3.2:3b"               # Name of the Ollama model to use
 MAX_TOKENS = 200                      # Maximum number of tokens for the refined text
 BATCH_SIZE = 10                       # Number of rows to process before saving progress
+
+# Prompt templates
+SYSTEM_PROMPT = """
+You are an AI prompt engineer tasked with helping me modifying a list of automatically generated prompts.
+
+Keep the original text but only do the following modifications:
+- you responses should just be the prompt
+- do not mention your task or the text itself
+- add the following word to the start of each prompt: MYTRIGGERWORD
+- modify each text so that ANNAMARIA is the main character in all of them, so use her name and since she's a woman, refer to her gender when necessary to make the sentences meaningful.
+- remove references to video such as "the video begins" or "the video features" etc., but keep those sentences meaningful
+- use only declarative sentences
 }
 ```
 ## Usage
