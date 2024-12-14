@@ -35,7 +35,7 @@ This tool uses LLaVA (Large Language and Vision Assistant) to generate detailed 
 1. Clone the repository:
 ```bash
 git clone https://github.com/cseti007/LLaVA-Video-7B-Qwen2-captioner.git
-cd llava-video-captioner
+cd LLaVA-Video-7B-Qwen2-captioner
 ```
 
 2. Create and activate a Python virtual environment:
@@ -182,7 +182,7 @@ pip install pandas langchain-core langchain-ollama
 
 3. Pull the ollama model
 ```bash
-ollama pull llama2:3b
+ollama pull llama3.2:3b
 ```
 
 ## Configuration
