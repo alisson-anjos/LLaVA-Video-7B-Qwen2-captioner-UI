@@ -191,7 +191,6 @@ Edit the `CONFIG` dictionary in the script to customize:
 
 Example configuration:
 ```python
-CONFIG = {
 # Configuration parameters
 INPUT_CSV = "/path/to/file.csv"                # Path to input CSV file
 OUTPUT_CSV = "/path/to/file.csv"              # Path to save the output CSV file
@@ -212,7 +211,7 @@ Keep the original text but only do the following modifications:
 - modify each text so that ANNAMARIA is the main character in all of them, so use her name and since she's a woman, refer to her gender when necessary to make the sentences meaningful.
 - remove references to video such as "the video begins" or "the video features" etc., but keep those sentences meaningful
 - use only declarative sentences
-}
+"""
 ```
 ## Usage
 1. Start the Ollama service if not running
